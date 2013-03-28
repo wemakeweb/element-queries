@@ -1,7 +1,10 @@
 element-queries
 ===============
 
-experimental: Media queries extended for elements
+experimental: Media queries extended for elements.
+
+Uses [css-parser](https://github.com/visionmedia/css-parse).
+Needs jQuery.
 
 ```css
 .widget {
