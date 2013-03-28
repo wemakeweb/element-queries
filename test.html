@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Element-queries</title>
+	</head>
+	<body>
+		<style type="text/css">
+			/* element-queries */
+			 @media only screen and (element: .widget) and (element-width: 100px) {
+			    .widget {
+			        background:green;
+			    }
+			}
+
+			/* "normal" css selectors */
+			@media only screen and (max-device-width: 480px) {
+			    body {
+			        -webkit-text-size-adjust:auto;
+			        -ms-text-size-adjust:auto;
+			    }
+			    img {
+			        max-width: 100% !important;
+			        height: auto !important;
+			    }
+			}
+			body {
+			    background: gray;
+			}
+			.widget {
+			    width:100px;
+			    height:100px;
+			    background:blue;
+			}
+
+
+		</style>
+		<div class="widget"></div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="index.js"></script>
+		<script>
+			elementQueries.parse();
+		</script>
+	</body>
+</html>
